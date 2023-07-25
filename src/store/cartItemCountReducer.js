@@ -5,7 +5,7 @@ export const cartItemCountSlice = createSlice ({
   initialState: 0,
   reducers: {
     addToCart: (state) => {
-      return state + 1 
+      return state + 1      
     },
   }
 })

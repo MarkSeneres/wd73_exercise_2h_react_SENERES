@@ -8,7 +8,7 @@ import Footer from "./component/Footer"
 import { Provider } from "react-redux"
 import { store } from "./store/Store"
 import Checkout from "./component/Checkout"
-
+import "./App.css"
 function App() {
     return (
     <> 

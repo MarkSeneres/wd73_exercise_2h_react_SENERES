@@ -1,7 +1,12 @@
+import "./Footer.css"
+
 function Footer() {
   return(
     <>
-      <small>Copyright@2023</small>
+    <div className="text-center m-3">
+     <small>Copyright@2023</small>
+    </div>
+      
     </>
   )
 }

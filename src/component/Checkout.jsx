@@ -1,11 +1,15 @@
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 
 function Checkout() {
   const cart = useSelector(state => state.cart)
-  
+   const dispatch = useDispatch
+
+   function handleClick() {
+    dispatch(removeItem())
+   }
   return (
     <>
-       <h3>Checkout</h3>
+       <h3 className="m-3">Checkout</h3>
       <div className="border shadow m-3">
         {
           cart.map(
@@ -17,7 +21,7 @@ function Checkout() {
                   <p>Price: ${cartItem.price}</p>
                   <p>Count: {cartItem.count}</p>
                 </div>
-                <button>Remove Item</button>
+                <button className="btn btn-secondary" onClick={handleClick} >Remove Item</button>
               </div>
               )
             }
