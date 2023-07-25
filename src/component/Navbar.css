@@ -1,0 +1,33 @@
+
+nav {
+  background-color: #8c60b8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.logo {
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+span {
+  color: blue;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}  
+nav ul li .navbar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+nav ul li .navbar-link:hover {
+  color: blue;
+  transition: .4s;
+}
